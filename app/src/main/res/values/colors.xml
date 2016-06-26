@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="wimbeldon_white">#efebec</color>
+    <color name="instagram_white">#fafafa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="user_photo_border">#E4E4E4</color>
+    <color name="user_name">#272323</color>
+</resources>

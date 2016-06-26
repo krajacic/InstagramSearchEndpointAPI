@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    dexOptions{
+        maxProcessCount 2
+        javaMaxHeapSize "2g"
+    }
+
+    defaultConfig {
+        applicationId "cawabanga.com.InstagramSearchEndpointAPI"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'org.glassfish.main:javax.annotation:4.0-b33'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    compile 'com.vstechlab.easyfonts:easyfonts:1.0.0'
+
+}
